@@ -1,0 +1,190 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Lexend+Deca&display=swap");
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+:root {
+  font-family: "Inter", "Lexend Deca", sans-serif;
+  font-size: 15px;
+}
+
+h1 {
+  font-size: 1.5rem;
+}
+
+@media screen and (min-width: 320px) {
+  h1 {
+    font-size: calc( (100vw - 21.4rem)/(96 - 21.4) * (2.4 - 1.5) + 1.5rem);
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  h1 {
+    font-size: 2.4rem;
+  }
+}
+
+body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  min-height: 100vh;
+  background-color: #090b1a;
+}
+
+.container {
+  width: 95%;
+  margin: 5em 0;
+  max-width: 1115px;
+  background-color: #1b1938;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  border-radius: 0.5em;
+  text-align: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: column-reverse;
+          flex-direction: column-reverse;
+}
+
+@media screen and (min-width: 375px) {
+  .container {
+    width: 75%;
+  }
+}
+
+@media screen and (min-width: 1250px) {
+  .container {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    text-align: left;
+  }
+}
+
+.container .container__left {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 auto;
+          flex: 1 1 auto;
+  width: 100%;
+  padding: 4.5em 2em 2em 2em;
+}
+
+@media screen and (min-width: 700px) {
+  .container .container__left {
+    padding: 4.5em;
+  }
+}
+
+.container .container__left h1 {
+  color: white;
+  margin-bottom: 0.75em;
+}
+
+.container .container__left h1 span {
+  color: #aa5cdb;
+}
+
+.container .container__left p {
+  display: inline-block;
+  width: 100%;
+  color: rgba(255, 255, 255, 0.75);
+  margin-bottom: 3.5em;
+  line-height: 170%;
+}
+
+.container .container__left .cards {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+@media screen and (min-width: 630px) {
+  .container .container__left .cards {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+}
+
+.container .container__left .cards .card-component {
+  padding: 1em;
+}
+
+.container .container__left .cards .card-component h4 {
+  font-size: 1.5rem;
+  color: white;
+  margin-bottom: 0.25em;
+}
+
+.container .container__left .cards .card-component p {
+  font-size: 0.8rem;
+  font-weight: 400;
+  color: rgba(255, 255, 255, 0.75);
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-bottom: 0;
+}
+
+.container .container__right {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 50%;
+          flex: 0 0 50%;
+  position: relative;
+}
+
+.container .container__right img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-top: 0.5em;
+}
+
+@media screen and (min-width: 1250px) {
+  .container .container__right img {
+    border-top-left-radius: 0;
+    border-top-right-radius: 0.5em;
+    border-bottom-right-radius: 0.5em;
+  }
+}
+
+.container .container__right::before {
+  content: "";
+  position: absolute;
+  background-color: rgba(147, 46, 209, 0.3);
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+/*# sourceMappingURL=main.css.map */
