@@ -1,33 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
+  <link rel="stylesheet" href="/design/css/main.css">
   <title>Frontend Mentor | Stats preview card component</title>
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
 </head>
+
 <body>
 
-  Get insights that help your business grow.
-
-  Discover the benefits of data analytics and make better decisions regarding revenue, customer 
-  experience, and overall efficiency.
-
-  10k+ companies
-  314 templates
-  12m+ queries
-
+  <div class="container">
+    <div class="container__left">
+      <h1>Get <span>insights</span> that help your business grow.</h1>
+      <p>Discover the benefits of data analytics and make better decisions regarding revenue, customer
+        experience, and overall efficiency</p>
+      <div class="cards">
+        <div class="card-component">
+          <h4>10k+</h4>
+          <p>Companies</p>
+        </div>
+        <div class="card-component">
+          <h4>314</h4>
+          <p>Templates</p>
+        </div>
+        <div class="card-component">
+          <h4>12M+</h4>
+          <p>Queries</p>
+        </div>
+      </div>
+    </div>
+    <div class="container__right">
+      <picture>
+        <source media="(max-width:650px)" srcset="/images/image-header-mobile.jpg">
+        <source media="(min-width:651px)" srcset="/images/image-header-desktop.jpg">
+        <img src="/images/image-header-mobile.jpg" alt="office workers">
+      </picture>
+    </div>
+  </div>
   <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+    Coded by <a href="#">Kirill Chekmenev</a>.
   </div>
 </body>
+
 </html>
